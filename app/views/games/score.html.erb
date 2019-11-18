@@ -1,0 +1,12 @@
+<h1>Your word is "<%= @user_word.upcase %>"</h1>
+
+<div class="result-container">
+  <div class="result">
+    <p><%= @found == true ? 'The word exist!!' : "The word doesn't exist" %></p>
+    <p><%= "Score is #{@length}" %></p>
+  </div>
+
+  <%= link_to 'Play again', new_path %>
+
+</div>
+
